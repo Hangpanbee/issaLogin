@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+
+.Title {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.transbox {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.Title h1{
+    font-family: "Mansalva", cursive;
+    font-size: 70px;
+    opacity: 0.8;
+    text-align: center;
+}

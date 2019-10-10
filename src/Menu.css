@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+#flyoutMenu {
+    width: 5%;
+    height: 100vh;
+    background: #4889e6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .1s 
+                cubic-bezier(0, .52, 0, 1);
+    overflow: scroll;
+    opacity: 0.5;
+    z-index: 1000;
+  }
+
+#flyoutMenu:hover {
+    opacity: 0.8 !important;
+}
+  
+  #flyoutMenu.hide {
+    transform: translate3d(-10vw, 0, 0);
+  }
+  
+  #flyoutMenu.show {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+  }
+  #flyoutMenu img {
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      max-width: 50%;
+      height:auto;
+      z-index:10000;
+      overflow: hidden;
+  }
+
+
+
+
+  #flyoutMenu h2 a {
+    color: #333;
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: 'Playfair Display' , serif;
+  }
+  
+  #flyoutMenu h2 a:hover {
+    text-decoration: underline;
+  }

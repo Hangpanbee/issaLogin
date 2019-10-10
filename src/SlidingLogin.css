@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+.leftBar1{
+	width: 35px;
+	height: 100%;
+	position: absolute;
+	background: #4889e6;
+	right: 0px !important;
+	top: 0;
+	cursor: pointer;
+	transition: all ease-out 0.1s 0s;
+	opacity: 0.8;
+}
+.leftBar1:hover{
+	transform: scale(1.2);
+}
+.leftBar1:after{
+	width: 0;
+	height: 0;
+}
+
+.PaneStyle {
+    background: #4889e6 !important;
+    opacity: 0.8;
+}
+
+.slide-pane__header {
+    background: #4889e6;
+    border-bottom: 0px !important;
+}
+
+.slide-pane__content {
+    text-align: center;
+    padding-top: 10vh;
+    margin: auto !important;
+}
+.PaneStyle:hover {
+    opacity: 0.95 !important;
+}
+
+.authBox{
+	width: 500px;
+	background: #fff;
+	border-radius: 3px;
+	padding: 10px;
+	position: relative;
+	box-shadow: 5px 10px 60px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.formCon {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.formCon h2{
+    font-family: "Mansalva", cursive;
+    font-size: 20px;
+	color: #4889e6;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.formBox input[type="text"], .formBox input[type="email"], .formBox input[type="password"]{
+	border-radius: 2px;
+	background: #dedede;
+	font-size: 14px;
+	height: 40px;
+}
+.formBox .form-group label{
+	text-transform: uppercase;
+	font-size: 10px;
+	margin-bottom: 6px;
+    color: gray;
+    font-family: "Mansalva", cursive;
+}
+.formBox button[type="submit"]{
+	width: 100%;
+	border-radius: 2px;
+	font-size: 14px;
+	text-transform: uppercase;
+	height: 40px;
+}
+.innerBox{
+	position: relative;
+}
+.innerBox .form-group{
+	float: left;
+}
+.loginBox{
+    padding-top: 3vh;
+    padding-right: 2vh;
+    padding-left: 2vh;
+    width: 400px;
+}
+
+.forgotLink{
+	float: right;
+}
+.forgotLink a{
+	text-decoration: none;
+	color: #4889e6;
+}
+.signupCon{
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    right: -420px;
+    width: 450px;
+    padding: 30px 35px;
+    background: #4889e6;
+    transition: all ease-out 0.3s 0s;
+}
+.signupCon .formBox input[type="text"], .signupCon .formBox input[type="email"], .signupCon .formBox input[type="password"]{
+	background: #417ace;
+	border-color: #417ace;
+}
+
+.signupCon:after{
+	content: attr(x);
+	width: 50px;
+	height: 100%;
+	position: absolute;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: -50px;
+	transition: all ease-out 0.1s 0s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.outterBox{
+    display: flex;
+}
+
+.signupCon .formBox .form-group label{
+	color: #fff;
+}
+.signupCon .formCon h2{
+	color: #fff;
+}
+.signupCon .formBox button[type="submit"]{
+	color: #4889e6;
+	background: #fff;
+	margin-top: 20px;
+}
+
+.openedBar .signupCon{
+	right: 0;
+}
+.openedBar .leftBar{
+	pointer-events: none;
+	opacity: 0;
+}
+.openedBar .authBox{
+	overflow: visible;
+}
+.openedBar .signupCon:after{
+	pointer-events: auto;
+	opacity: 1;
+}
+.closeBtn{
+	position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #848181;
+    transition: all linear 0.1s 0s;
+    cursor: pointer;
+}
+.closeBtn:hover{
+	transform: scale(1.2);
+}
+.outterCon{
+	overflow: hidden;
+    height: 53vh;
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 500px){
+	.outterCon{
+		width: 100%;
+	}
+	.authBox{
+		width: 100%;
+	}
+
+	.signupCon{
+		width: calc(100% - 50px);
+		right: calc(-100% + 80px);
+	}
+}
